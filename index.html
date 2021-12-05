@@ -341,7 +341,7 @@
             </section>
         </main>
 
-        <!-- CONTACTS SECTION -->
+            <!-- CONTACTS SECTION -->
         
         <footer id="contacts" class="footer-section">
             <div class="container">
@@ -388,6 +388,22 @@
                     </li>
                 </ul>
             </div>
+                <div class="online-footer">
+                    <h3 class="footer-title">Подпишитесь на рассылку</h3>
+                        <form action="#" class="online-form"></form>
+                            <input type="email"
+                            class="online-footer-input"
+                            name="online-email"
+                            placeholder="E-mail"
+                            title="test@mail.ru"
+                            >
+                            <button type="button" class="online-footer-button">Подписаться
+                                <svg class="online-footer-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                </div>
             </div>
         </footer>
 
@@ -400,6 +416,65 @@
                         <use href="./images/icons.svg#icon-close-modal"></use>
                     </svg>
                 </button>
+
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form action="#" class="modal-form">
+                    <div class="modal-field">
+                        <label for="user-name" class="form-input-text">Имя</label>
+                            <div class="input-wrap">
+                                <input type="text"
+                                name="user-name" 
+                                id="user-name"
+                                class="modal-form-input" 
+                                placeholder="Станислав"
+                                required
+                                minlength="2"
+                                title="Ваше имя"
+                                >
+                                <svg class="input-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#icon-person-black"></use>
+                                </svg>
+                            </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="form-input-text" for="user-tel">Телефон</label>
+                            <div class="input-wrap">
+                                <input type="tel"
+                                name="user-tel" 
+                                id="user-tel"
+                                class="modal-form-input" 
+                                placeholder="+38 (099) 111-11-11"
+                                title="+38 (099) 111-11-11"
+                                required
+                                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                                >
+                                <svg class="input-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#icon-phone-black"></use>
+                                </svg>
+                            </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="form-input-text" for="user-email">Почта</label>
+                            <div class="input-wrap">
+                                <input type="email" 
+                                id="user-email"
+                                name="user-email" 
+                                class="modal-form-input"
+                                placeholder="ххххххх@mail.ru"
+                                title="test@mail.ru"
+                                >
+                                <svg class="input-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#icon-email-black"></use>
+                                </svg>
+                            </div>
+                    </div>
+                        <div class="modal-field">
+                            <label class="form-input-text" for="user-text">Комментарий</label>
+                            <textarea name="user-text" id="user-text" class="modal-form-text" cols="30" rows="10" 
+                            placeholder="Введите текст"></textarea>
+                        </div>
+                    <button type="submit" class="modal-btn">Отправить</button>
+                </form>
             </div>
         </div>
     <script src="./js/modal.js"></script>
